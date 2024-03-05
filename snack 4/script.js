@@ -30,16 +30,25 @@ const peopleList = [
     },
 ]
 
-//Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e età e l'indicazione se può guidare, in base all'età.
+console.log(peopleList)
 
+//Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e età e l'indicazione se può guidare, in base all'età.
+let newPeopleList = []
 
 peopleList.forEach(person => {
     if (person.eta >= 18) {
-        console.log(`allowed to drive: ${person.nome} ${person.cognome} with ${person.eta} years`)
+        const allowedList = [` ${person.nome} ${person.cognome} with ${person.eta} years`, 'Allowed']
+        console.log(allowedList)
+        newPeopleList.push(allowedList)
     }
     else {
-        console.log(`denied to drive: ${person.nome} ${person.cognome} with ${person.eta} years`)
-    }
+        const deniedList = [` ${person.nome} ${person.cognome} with ${person.eta} years`, 'Denied']
+        console.log(deniedList)
+        newPeopleList.push(deniedList)
 
+
+
+    }
 });
+console.log(newPeopleList)
 
