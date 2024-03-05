@@ -43,12 +43,3 @@ peopleList.forEach(person => {
 
 });
 
-
-
-
-/* if (peopleAge.age >= 18) {
-    const allowDrive = 'Consentito'
-    console.log(`i dati della persona sono ${peopleName} ${peopleSurname} e ha ${peopleAge}, quindi è ${allowDrive} guidare`)
-} else {
-    const denyDrive = 'Vietato'
-    console.log(`i dati della persona sono ${peopleName} ${peopleSurname} e ha ${peopleAge}, quindi è ${denyDrive} guidare`) */
