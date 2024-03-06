@@ -24,3 +24,13 @@ biciDaCorsa.forEach(bici => {
 
 //log
 console.log(`Il peso minore fra tutti i modelli di bici è ${biciPesoMinore} kg.`)
+
+//BONUS
+
+let page = document.querySelector('body');
+
+let titlePage = document.createElement('h1')
+titlePage.classList.add('text-center', 'red')
+titlePage.innerHTML = `Il peso minore fra tutti i modelli di bici è ${biciPesoMinore} kg.`
+
+page.appendChild(titlePage)
