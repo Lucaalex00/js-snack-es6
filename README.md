@@ -21,3 +21,9 @@
     Crea un array di oggetti che rappresentano delle persone-
     Ogni persona ha un nome, un cognome e un età.
     Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e età e l'indicazione se può guidare, in base all'età.
+    
+    
+# SNACK 5
+    Creare un array di oggetti:
+        Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+    Stampare in console la bici con peso minore utilizzando destructuring e template literal
