@@ -45,9 +45,6 @@ peopleList.forEach(person => {
         const deniedList = [` ${person.nome} ${person.cognome} with ${person.eta} years`, 'Denied']
         console.log(deniedList)
         newPeopleList.push(deniedList)
-
-
-
     }
 });
 console.log(newPeopleList)
