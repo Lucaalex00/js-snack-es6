@@ -17,17 +17,23 @@ let zucchine = [
 ];
 let ZucchinaSmallList = [];
 let ZucchinaLargeList = [];
+let zucchinaSmallWeight = 0;
+let zucchinaLargeWeight = 0;
 
 zucchine.forEach(zucchina => {
     /* console.log(zucchina) */
     if (zucchina.lunghezza < 15) {
-
         ZucchinaSmallList.push(zucchina)
-        return ZucchinaSmallList
+        zucchinaSmallWeight += zucchina.peso
+        return zucchinaSmallWeight
     } else {
         ZucchinaLargeList.push(zucchina)
-        return ZucchinaLargeList
+        zucchinaLargeWeight += zucchina.peso
+
+        return zucchinaLargeWeight
     }
 });
-console.log(ZucchinaSmallList)
-console.log(ZucchinaLargeList)
+console.log(zucchinaSmallWeight)
+
+
+console.log(zucchinaLargeWeight)
