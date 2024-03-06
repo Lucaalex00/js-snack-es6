@@ -34,6 +34,4 @@ zucchine.forEach(zucchina => {
     }
 });
 console.log(zucchinaSmallWeight)
-
-
 console.log(zucchinaLargeWeight)
