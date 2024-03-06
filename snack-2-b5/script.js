@@ -1,6 +1,7 @@
-
-/* Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-Calcola quanto pesano tutte le zucchine. */
+/* snack-2-b5
+Crea 10 oggetti che rappresentano una zucchina.
+Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+Infine stampa separatamente quanto pesano i due gruppi di zucchine. */
 
 let zucchine = [
     { varietà: "Zucchina nera di Milano", peso: 150, lunghezza: 15 },
@@ -14,15 +15,19 @@ let zucchine = [
     { varietà: "Zucchina genovese", peso: 160, lunghezza: 16 },
     { varietà: "Zucchina lunga fiorentina", peso: 190, lunghezza: 19 }
 ];
+let ZucchinaSmallList = [];
+let ZucchinaLargeList = [];
 
-let totalWeight = 0;
-
-console.log(zucchine);
 zucchine.forEach(zucchina => {
-    /* console.log(zucchina.peso); */
-    totalWeight += zucchina.peso
-    return totalWeight
+    /* console.log(zucchina) */
+    if (zucchina.lunghezza < 15) {
+
+        ZucchinaSmallList.push(zucchina)
+        return ZucchinaSmallList
+    } else {
+        ZucchinaLargeList.push(zucchina)
+        return ZucchinaLargeList
+    }
 });
-
-console.log(totalWeight)
-
+console.log(ZucchinaSmallList)
+console.log(ZucchinaLargeList)
